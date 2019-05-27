@@ -12,7 +12,8 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="stylesheet" href="lightbox2-master/dist/css/lightbox.css">
+		<!--<link rel="stylesheet" href="assets/css/lightbox.css" type="text/css">-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	</head>
 	<body class="is-preload">
 
@@ -60,10 +61,12 @@
 								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
 								<span class="image fit"><img src="images/intro_pic.jpg" alt="" /></span>
 								<div>
-									<a class="example-image-link" href="images/foto-visitekaartje.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-3.jpg" alt=""/></a>
-									<a class="example-image-link" href="images/intro_pic.jpg" data-lightbox="example-set" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-4.jpg" alt="" /></a>
-									<a class="example-image-link" href="images/olives_pic_crop.jpg" data-lightbox="example-set" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-5.jpg" alt="" /></a>
-									<!--<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>-->
+									<!--<a class="demo" href="images/foto-visitekaartje.jpg" data-lightbox="gallery" data-title="Click the right half of the image to move forward."><img class="example-image" src="images/foto-visitekaartje.jpg" alt=""></a>
+									<a class="demo" href="images/intro_pic.jpg" data-lightbox="gallery" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="images/intro_pic.jpg" alt=""></a>
+									<a class="demo" href="images/olives_pic_crop.jpg" data-lightbox="gallery" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="images/olives_pic_crop.jpg" alt=""></a>
+									<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>-->
+									<a data-fancybox="gallery" href="images/foto-visitekaartje.jpg"><img src="images/foto-visitekaartje.jpg"></a>
+									<a data-fancybox="gallery" href="images/intro_pic.jpg"><img src="images/intro_pic.jpg"></a>
 								</div>
 							</article>
 
@@ -364,12 +367,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<div id="bg"></div>
 
 		<!-- Scripts -->
-			<script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
+			<!--<script src="assets/js/lightbox-plus-jquery.js"></script>-->
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 	</body>
 </html>
