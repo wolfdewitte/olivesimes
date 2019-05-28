@@ -12,8 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<!--<link rel="stylesheet" href="assets/css/lightbox.css" type="text/css">-->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 	</head>
 	<body class="is-preload">
 
@@ -34,7 +33,7 @@
 						<nav>
 							<ul>
 								<li><a href="#intro">Home</a></li>
-								<li><a href="#foto">Foto's</a></li>
+								<li><a href="#gallery-1">Foto's</a></li>
 								<li><a href="#about">Info</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
@@ -49,7 +48,7 @@
 							<article id="intro">
 								<h2 class="major" style="color:#1b1f22;">Olives i Més...</h2>
 								<span class="image main"><img src="images/olives_pic_crop.jpg" alt="" /></span>
-								<p style="color:#1b1f22">Is de naam van ons vakantiehuisje dat we het hele jaar door verhuren. Uitermate geschikt voor wie zijn vakantie wil doorbrengen in een natuurlijke en rustige omgeving dicht bij de kust en de bergen. Bekijk de foto's <a href="#foto">hier</a>.</p>
+								<p style="color:#1b1f22">Is de naam van ons vakantiehuisje dat we het hele jaar door verhuren. Uitermate geschikt voor wie zijn vakantie wil doorbrengen in een natuurlijke en rustige omgeving dicht bij de kust en de bergen.<!-- Bekijk de foto's <a href="#foto">hier</a>.--></p>
 								<p style="color:#1b1f22">Zo heet ook onze overheerlijke ambachtelijke biologische extra virgen olijfolie. Koud geperst in een traditionele olijfoliemolen met granieten molenstenen. Op basis van de 3 typische olijvensoorten – Morrut, Sevillenca en Farga – van onze streek Les Terres de l’Ebre in Zuid-Catalonië. Het is een zeer fruitige en aromatische olijfolie die uitstekend geschikt is bij zuiderse gerechten, vnl. visgerechten, bij salades of gewoon puur bij een stukje brood.</p>
 							</article>
 
@@ -60,14 +59,14 @@
 								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
 								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
 								<span class="image fit"><img src="images/intro_pic.jpg" alt="" /></span>
-								<div>
-									<!--<a class="demo" href="images/foto-visitekaartje.jpg" data-lightbox="gallery" data-title="Click the right half of the image to move forward."><img class="example-image" src="images/foto-visitekaartje.jpg" alt=""></a>
-									<a class="demo" href="images/intro_pic.jpg" data-lightbox="gallery" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="images/intro_pic.jpg" alt=""></a>
-									<a class="demo" href="images/olives_pic_crop.jpg" data-lightbox="gallery" data-title="The next image in the set is preloaded as you're viewing."><img class="example-image" src="images/olives_pic_crop.jpg" alt=""></a>
-									<a class="example-image-link" href="http://lokeshdhakar.com/projects/lightbox2/images/image-6.jpg" data-lightbox="example-set" data-title="Click anywhere outside the image or the X to the right to close."><img class="example-image" src="http://lokeshdhakar.com/projects/lightbox2/images/thumb-6.jpg" alt="" /></a>-->
-									<a data-fancybox="gallery" href="images/foto-visitekaartje.jpg"><img src="images/foto-visitekaartje.jpg"></a>
-									<a data-fancybox="gallery" href="images/intro_pic.jpg"><img src="images/intro_pic.jpg"></a>
-								</div>
+								<p class="imglist">
+									<a href="https://images.unsplash.com/photo-1534099946341-34fe5ef39eef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" data-fancybox="gallery">
+										<img src="https://images.unsplash.com/photo-1534099946341-34fe5ef39eef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+									</a>
+									<a href="https://images.unsplash.com/photo-1512485209041-5bacefbdf80a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" data-fancybox="gallery">
+										<img src="https://images.unsplash.com/photo-1512485209041-5bacefbdf80a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+									</a>
+								</p>
 							</article>
 
 						<!-- About -->
@@ -368,12 +367,33 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<!--<script src="assets/js/lightbox-plus-jquery.js"></script>-->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$("a.fancybox").fancybox();
+				});
+			</script>
+			<script>
+				$('[data-fancybox="gallery"]').fancybox({
+					buttons : [
+						//'slideShow',
+						//'share',
+						//'zoom',
+						//'fullScreen',
+						'thumbs',
+						'close'
+					],
+					thumbs : {
+						autoStart : false
+					},
+					loop: true,
+					protect: true,
+				});
+			</script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 	</body>
 </html>
