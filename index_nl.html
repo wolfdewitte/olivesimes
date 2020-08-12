@@ -35,7 +35,7 @@
 								<li><a href="#intro">Home</a></li>
 								<li><a href="#gallery-1">Foto's</a></li>
 								<li><a href="#about">Info</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a href="javascript:decryptEmail('aW5mb0BvbGl2ZXNpbWVzLmNvbQ==');">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -105,30 +105,33 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major" style="color:#1b1f22;">Contact</h2>
-								<form method="post" action="https://www.formingo.co/submit/wolfdewitte@outlook.com">
+								<!--
+								<form method="post" action="#">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Naam</label>
-											<input type="text" name="name" id="name" />
+											<input type="text" name="name" id="name" required />
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="email" name="email" id="email" required />
 										</div>
 										<div class="field">
 											<label for="message">Bericht</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<textarea name="message" id="message" rows="4" required ></textarea>
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Verzenden" class="primary" /></li>
+										<li><input type="submit" value="Verzenden" class="primary" /></li>-->
 										<!--<li><input type="reset" value="Reset" /></li>-->
-									</ul>
-									<input type="hidden" name="_next" value="https://wolfdewitte.github.io/testsite/index_nl.html#" />
-								</form>
+									<!--</ul>
+									<input type="hidden" name="*redirect" value="#" />
+									<input type="hidden" name="*reply" value="email" />
+									<input type="hidden" name="*default_email" value="wolfdewitte@outlook.com" />
+								</form>-->
 								<ul class="icons">
-									<li><a href="https://twitter.com/olivesimes" target="_blank" class="icon fa-twitter" style="color:#1b1f22"><span class="label">Twitter</span></a></li>
-									<li><a href="https://www.facebook.com/Olives-i-m%C3%A9s-1412031742342872/" target="_blank" class="icon fa-facebook" style="color:#1b1f22"><span class="label">Facebook</span></a></li>
+									<li><a href="https://twitter.com/olivesimes" target="_blank" class="fab fa-twitter" style="color:#1b1f22"></a></li>
+									<li><a href="https://www.facebook.com/Olives-i-m%C3%A9s-1412031742342872/" target="_blank" class="fab fa-facebook-f" style="color:#1b1f22"></a></li>
 									<!--<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
 									<!--<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>-->
 								</ul>
@@ -417,6 +420,16 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+
+			function decryptEmail(encoded) {
+
+				var address = atob(encoded);
+				window.location.href = "mailto:" + address;
+
+			}
+
+			</script>
 
 	</body>
 </html>
