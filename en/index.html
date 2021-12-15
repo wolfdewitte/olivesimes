@@ -32,9 +32,32 @@
         <article id="home">
           <h2 class="major" style="color:#1b1f22;">Olives i Més...</h2>
           <span class="image main"><img src="../images/view_pic2.jpg" alt=""></span>
+          <p style="color:#1b1f22" align="justify">That is the name of our holiday cottage we rent out all year round. It is ideal for those who wish to spend their holidays in a natural and peaceful setting, near both the sea and the mountains.</p>
+          <p style="color:#1b1f22" align="justify">It is also the name of our artisanal, organic, extra virgin olive oil. Cold-pressed from the Morrut, Sevillenca, and Farga olive varieties typical of the Terres de l'Ebre region in South Catalonia, it is fruity and aromatic olive oil perfect for cooking, salads, or simply to be had with some bread.</p>
+        </article>
+        <article id="gallery-1">
+          <p class="imglist">
+            <a data-fancybox="gallery" data-src="../images/gallery/01.jpg">
+              <img src="..images/gallery/thumbs/01_thumb.jpg" alt="">
+            </a>
+          </p>
         </article>
       </div>
     </div>
+    <div id="bg"></div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+      function decryptEmail(encoded) {
+        var address = atob(encoded);
+        window.location.href = "mailto:" + address;
+      }
+    </script>
 
   </body>
 </html>
